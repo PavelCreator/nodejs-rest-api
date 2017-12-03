@@ -9,7 +9,7 @@
   <li>4 level <strong>validation</strong> system:
     <ul>
       <li>Check entered --watch command line argument</li>
-      <li>Chech file existed in specified file path</li>
+      <li>Check file existed in specified file path</li>
       <li>Check ".json" extension for specified file (e.g. not .txt)</li>
       <li>Check correct JSON format of file</li>
     </ul>
