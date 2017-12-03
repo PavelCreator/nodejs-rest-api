@@ -3,6 +3,11 @@ const fs = require('fs');
 
 const fileService = {
 
+	/**
+	 * Read file from specified path from command line options. Validation included
+	 * @param {Object} options Command line options
+	 * @returns {string} file content
+	 */
 	getFileContents: function (options) {
 		try {
 			const fileContents = fs.readFileSync('./' + options.watch, 'utf8')
@@ -13,6 +18,10 @@ const fileService = {
 		}
 	},
 
+	/**
+	 * Parse JSON from string. Validation included
+	 * @param {string} file File to parse
+	 */
 	parseFile: function (file) {
 		try {
 			const data = JSON.parse(file);
