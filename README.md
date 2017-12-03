@@ -6,7 +6,25 @@
   <li>Code broken into logical components that interact with each other - created <strong>5 services for different purposes</strong> (command line, work with files, status-handler, router, validation service)</li>
   <li>All stages of logic/checks/requests are displayed in the server console with the corresponding <strong>colored console logs</strong> - red errors, green success, yellow warnings and blue information</li>
   <li>All service methods are documented in detail in the <strong>JSDoc</strong> format</li>
+  <li>4 level <strong>validation</strong> system:
+    <ul>
+      <li>Check entered --watch command line argument</li>
+      <li>Chech file existed in specified file path</li>
+      <li>Check ".json" extension for specified file (e.g. not .txt)</li>
+      <li>Check correct JSON format of file</li>
+    </ul>
+  </li>
 </ul>
+
+<h3>Local deploy</h3>
+<ol>
+  <li>Install Node v8 and nmp v5</li>
+  <li>Clone this repo</li>
+  <li>Enter in console <pre>$ node jsonserver.js --watch db.json</pre> to start server<li>
+  <li>You can place another JSON-file to folder and try it with <pre>$ node jsonserver.js --watch {file-name}.json</pre>
+  <li>You can check API using curl if you install it and setup in environment variables. Enter <pre>$ curl http://localhost:8080/students</pre> for test first API endpoint</li>
+  <li>You can check API through browser. Just open <a href='http://localhost:8080/students'>http://localhost:8080/students</a> for test first API endpoint</li>
+</ol>
 
 <h3>Exercise</h3>
 <h4>Introduction</h4>
