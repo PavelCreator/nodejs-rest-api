@@ -1,0 +1,12 @@
+{
+  "students":[
+    { "id":1, "name": "John Smith", "age": 31 },
+    { "id":2, "name": "Veronika", "age": 25 },
+    { "id":3, "name": "Pitter Bill", "age": 28 }
+  ],
+  "companies": [
+    { "id":1, "name": "Microsoft", "city": "California" },
+    { "id":2, "name": "Apple", "city": "New York" },
+    { "id":3, "name": "Google", "city": "Seattle" }
+  ]
+}
