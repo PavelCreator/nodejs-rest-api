@@ -4,7 +4,7 @@
   <li>Implemented using JavaScript backend/middleware framework <strong><a href='http://expressjs.com'>Express</a></strong></li>
   <li>Implemented on <strong>EcmaScript 6</strong> (ES2015) without jQuery</li>
   <li>Code broken into logical components that interact with each other - created <strong>5 services for different purposes</strong> (command line, work with files, status-handler, router, validation service)</li>
-  <li>All stages of logic/checks/requests are displayed in the server console with the corresponding <strong>colors console logs</strong> - red errors, green success, yellow warnings and blue information</li>
+  <li>All stages of logic/checks/requests are displayed in the server console with the corresponding <strong>colored console logs</strong> - red errors, green success, yellow warnings and blue information</li>
   <li>All service methods are documented in detail in the <strong>JSDoc</strong> format</li>
 </ul>
 
