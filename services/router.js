@@ -1,7 +1,6 @@
 const statusHandler = require('./handle-status.service');
 
 const router = {
-
 	createRoutes: function (data, app) {
 		for (let categoryName in data) {
 			if (data.hasOwnProperty(categoryName)) {
@@ -26,13 +25,9 @@ const router = {
 			response.send('Browser favicon query');
 		});
 
-		app.get('/wrong_query', function (request, response) {
-			statusHandler.warning('Wrong url inited');
+		app.all('*', function (request, response) {
+			statusHandler.warning(`Wrong url inited: "${request.url}"`);
 			response.send('There is no data for your request.');
-		});
-
-		app.all('*', function (req, res) {
-			res.redirect("/wrong_query");
 		});
 	}
 
